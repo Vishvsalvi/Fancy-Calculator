@@ -1,0 +1,108 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 0.5fr);
+    grid-gap: 1px;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 1.4em;
+    justify-content: center;
+    width: 30%;
+    position: relative;
+    left: 27em;
+    top: 2em;
+}
+
+.numbers, .operators {
+    height:1em;
+    text-align: center;
+    padding: 2em;
+}
+.number-0, .decimal, .clear, .equals{
+    display: flexbox;
+    text-align: center;
+    padding: 2em; 
+}
+.input{
+    font-weight: 100;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: end;
+    height: 1.2em;
+    padding: 0.4em;
+    font-size: 2.3em;
+}
+.equals{
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-end: 4;
+    grid-column-start: 5;
+    background-color: rgb(243, 243, 71);
+    font-size: 2em;
+    
+} 
+.clear{
+    grid-column-end: 3;
+    grid-column-start: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+
+}
+.decimal{
+    grid-column-end: 4;
+    grid-column-start: 5;
+}
+.number-0{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.input{
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+.numbers, .number-0, .clear, .decimal{
+    background-color: rgb(212, 212, 212);
+}
+.operators, .equals{
+    /* background-color: rgb(252, 156, 23); */
+    background-color: rgb(255, 149, 0);
+    color: white;
+}
+
+.clear{
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+span{
+    position: relative;
+    top: 1em;
+}
+.decimal:hover{
+    color: white;
+    background-color: rgb(170, 170, 170);
+    cursor:pointer;
+}
+.clear:hover{
+    color: white;
+    background-color: rgb(170, 170, 170);
+    cursor:pointer;
+}
+.numbers:hover{
+    color: white;
+    background-color: rgb(170, 170, 170);
+    cursor:pointer;
+}
+.number-0:hover{
+    color: white;
+    background-color: rgb(170, 170, 170);
+    cursor:pointer;
+}
+.operators:hover{
+    background-color:rgb(252, 167, 47);
+    cursor:pointer;
+}
+.equals:hover{
+    background-color:rgb(252, 167, 47);
+    cursor:pointer;
+}
